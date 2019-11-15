@@ -12,7 +12,7 @@ mypy = "*"
 pytest-watch = "*"
 
 [packages]
-django = "==2.0.8"
+django = "==2.0.12"
 mysqlclient = "*"
 pypugjs = "*"
 attrs = "*"
