@@ -1,8 +1,10 @@
-version: '2.1'
+version: '2.3'
 
 services:
   djangoapp:
-    image: djangoapp:${BUILD_VERSION:-devel}
+    build:
+      context: ./src
+      target: devel
     command: /bin/sh -c 'echo "READY" && tail -f /dev/null'
     # environment:
     #   - DATABASE_NAME=test_dev
